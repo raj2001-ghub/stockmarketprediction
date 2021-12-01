@@ -1,0 +1,1 @@
+web: gunicorn predstocks.wsgi --log-file -
