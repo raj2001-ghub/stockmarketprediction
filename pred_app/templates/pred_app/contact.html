@@ -1,0 +1,143 @@
+{% extends "pred_app/base.html" %} {% load static %} {% block nav %}
+<li>
+  <a href="index"> Home </a>
+</li>
+<li>
+  <a href="pred"> Prediction </a>
+</li>
+<li class="active">
+  <a href="contact"> Contact Us </a>
+</li>
+{% endblock nav %} {% block content %}
+<div class="content" style="background-color: #171b26; margin-left: 30px">
+  <div class="article">
+    <h2 style="font-size: 4rem; font-weight: bolder">
+      <span> To Contact Us </span>
+    </h2>
+    <div class="clr"></div>
+  </div>
+  <div class="article">
+    <h2>
+      <span> Send us </span>
+      mail
+    </h2>
+    <div class="clr"></div>
+    <form action="#" id="sendemail" method="post">
+      <ol>
+        <li>
+          <label for="name" style="color: #8c9abe; margin-bottom: 15px">
+            Name (required)
+          </label>
+          <input
+            class="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            style="
+              border-radius: 5px;
+              margin-bottom: 15px;
+              height: 35px;
+              outline: none;
+              border: none;
+              padding: 5px 10px;
+              color: #171b26;
+              font-weight: 500;
+              margin-right: 30px;
+              width: 300px;
+            "
+          />
+        </li>
+        <li>
+          <label for="email" style="color: #8c9abe; margin-bottom: 15px">
+            Email Address (required)
+          </label>
+          <input
+            class="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+            style="
+              border-radius: 5px;
+              margin-bottom: 15px;
+              height: 35px;
+              outline: none;
+              border: none;
+              padding: 5px 10px;
+              color: #171b26;
+              font-weight: 500;
+              margin-right: 30px;
+              width: 300px;
+            "
+          />
+        </li>
+        <li>
+          <label for="website" style="color: #8c9abe; margin-bottom: 15px">
+            Website
+          </label>
+          <input
+            class="text"
+            id="website"
+            name="website"
+            placeholder="Website"
+            style="
+              border-radius: 5px;
+              margin-bottom: 15px;
+              height: 35px;
+              outline: none;
+              border: none;
+              padding: 5px 10px;
+              color: #171b26;
+              font-weight: 500;
+              margin-right: 30px;
+              width: 300px;
+            "
+          />
+        </li>
+        <li>
+          <label for="message" style="color: #8c9abe; margin-bottom: 15px">
+            Your Message
+          </label>
+          <textarea
+            cols="50"
+            id="message"
+            name="message"
+            placeholder="Type your message"
+            rows="8"
+            style="border-radius: 5px"
+          >
+          </textarea>
+        </li>
+        <li>
+          <!-- <input
+            class="send"
+            id="imageField"
+            name="imageField"
+            src="https://cdn-icons-png.flaticon.com/512/32/32213.png"
+            type="image"
+            style="color: white"
+          /> -->
+          <button
+            type="submit"
+            class="send"
+            id="imageField"
+            name="imageField"
+            style="
+              height: 35px;
+              background-color: #8c9abe;
+              color: black;
+              font-weight: bold;
+              /* padding: auto 15px; */
+              border: none;
+              outline: none;
+              width: 100px;
+              border-radius: 5px;
+            "
+          >
+            Send
+          </button>
+        </li>
+      </ol>
+    </form>
+  </div>
+</div>
+{% endblock content %}
